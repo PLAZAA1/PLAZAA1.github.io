@@ -69,7 +69,7 @@
     position:absolute;
     width: 328px;
     height: 150px;
-    left: 16px;
+    left: 25px;
     top: 289px;
     /*padding: 22px;*/
     background: #FFFFFF;
@@ -149,7 +149,7 @@
     width: 300px;
     height: 16px;
     left: 110px;
-    top: 772px;
+    top: 785px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -168,7 +168,7 @@
     width: 219px;
     height: 45px;
     left: 77px;
-    top: 798px;
+    top: 811px;
     /* Purple 1 */
     background: #9B51E0;
     font-style: normal;
@@ -349,68 +349,43 @@
     background: #FFFFFF;
   }
 
+  .line-break1{
+    margin-top:250px;
+    position: absolute;
+    width: 216px;
+    height: 0px;
+    left: 50px;
+    border: 0.4px solid #CACACA;
+    opacity:0.3;
+  }
+
+  .line-break2{
+    margin-top:250px;
+    position: absolute;
+    width: 216px;
+    height: 0px;
+    left: 50px;
+    border: 0.4px solid #CACACA;
+    opacity:0.3;
+  }
+
+  .line-break3{
+    margin-top:285px;
+    position: absolute;
+    width: 216px;
+    height: 0px;
+    left: 48px;
+    border: 0.4px solid #CACACA;
+    opacity:0.3;
+  }
+
   .part_3{
     position:absolute;
     top:2570px;
   }
 
-  .dropdown{
-      margin-top: 32px;
-      left:24px;
-      position:relative;
-  }
-
-  .question{
-    margin-top: 25px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    width: 286px;
-    height: 19px;   
-    /* identical to box height */
-    letter-spacing: 0.05em;
-    /* Gray 2 */
-    color: #4F4F4F;
-  }
-
-  .accordion {
-    margin-top: 25px;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    width: 286px;
-    height: 25px; 
-  }
-
-  .panel{
-    margin-top: 10px;
-    width: 255px;
-    height: 80px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    /* or 143% */
-    letter-spacing: 0.05em;
-    /* Gray 2 */
-    color: #4F4F4F;
-    display: none;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-
   .semi_head{
-    margin-top: 100px;
+    margin-top: 54px;
     margin-left: 18px;
     font-weight: normal;
     font-size: 28px;
@@ -418,7 +393,7 @@
     width: 323px;
     height: 66px;
     color: #000000;
-  }
+  }  
 
   .purp_button{
     width: 200px;
@@ -437,92 +412,43 @@
     background: #9B51E0;
   }
 
-  .faq-heading {
-    font-weight: 400;
-    font-size: 19px;
-     -webkit-transition: text-indent 0.2s;
-    text-indent: 20px;
-    color: #333;
+  .container{
+      margin-top:32px;
+      margin-left: 8px;
   }
-  
-  .faq-text { 
-    font-weight: 400;
-    color: #919191;
-    width:95%;
-    padding-left:20px;
-    margin-bottom:30px;
-  }
-  
-  .faq {
-    width: 301px;
-    margin: 0 auto;
-    margin-top:32px;
-    background: white;
-    border-radius: 4px;
-    position: relative;
-    border: 1px solid #E1E1E1;
 
-  }
-  .faq label {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    height: 56px;
-    padding-top:1px;
-   
-    /*background-color: #FAFAFA;*/
-    border-bottom: 1px solid #E1E1E1;
-  }
-  
-  .faq input[type="checkbox"] {
-    display: none;
-  }
-  
-  .faq .faq-arrow {
-    width: 5px;
-    height: 5px;
-    transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-    transition: transform 0.8s, -webkit-transform 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    border-top: 2px solid rgba(0, 0, 0, 0.33);
-    border-right: 2px solid rgba(0, 0, 0, 0.33);
+.accordion-toggle{
+    left:22px;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    /* Gray 2 */
+    color: #4F4F4F;
+    line-height: 150%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+.panel-body{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.05em;
+    /* Gray 2 */
+    color: #4F4F4F;
+
+}
+
+  .panel-heading [data-toggle="collapse"]:after {
     float: right;
-    position: relative;
-    top: -30px;
-    right: 27px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  
-   .faq input[type="checkbox"]:checked + label > .faq-arrow {
-    transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-    transition: transform 0.8s, -webkit-transform 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-  }
-   .faq input[type="checkbox"]:checked + label {
-    display: block;
-    background: rgba(255,255,255,255) !important;
-    color: #4f7351;
-    height: 225px;
-    transition: height 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-   .faq input[type='checkbox']:not(:checked) + label {
-    display: block;
-    transition: height 0.8s;
-    height: 60px;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
+    font-size: 18px;
+    line-height: 22px;
+}
 
   .part_4{
     position:absolute;
@@ -549,32 +475,51 @@
     bottom:0;
   }
 
-  .left{
-    width: 104px;
-    height: 16px;
-    margin-left: 22px;
-    margin-top:52px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: left;
-    color: #FFFFFF;
-    display:inline;
-    float: left;
-  }
+  #parent_div_1 {
+  width: 130px;
+  height: 100px;
+  margin-top: 28px;
+  margin-right: 37px;
+  margin-left: 23px;
+  float: left;
+  line-height:16.41px;
+  font-size:14px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
 
-  .right{
-    width: 76px;
-    height: 16px;
-    margin-left: 180px;
-    margin-top:-20px;
-    font-style: normal;
+#parent_div_2{
+    width: 140px;
+    height: 100px;
+    margin-top: 28px;
+    margin-right: 37px;
+    margin-left: 23px;
+    float: left;
+    line-height:16.41px;
+    font-size:14px;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align:right;
     color: #FFFFFF;
-    display:inline;
-    /*float:right;*/
-  }
+}
+
+.child_div_1 {
+  float: left;
+  margin-right: 5px;
+  line-height:300%;
+}
+.child_div_2{
+    float: left;
+    margin-right: 5px;
+    line-height:16.41px;
+}
+.child_div_3{
+    float: left;
+    margin-right: 5px;
+    line-height:300%;
+}
+.child_div_4{
+    width: 137px;
+    height: 64px;   
+    float: left;
+    margin-right: 5px;
+    line-height:16.41px;
+}
