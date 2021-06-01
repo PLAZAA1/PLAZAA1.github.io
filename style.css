@@ -43,11 +43,11 @@
 }
 
 .login_button{
-  position:absolute;
-  right: 1em;
+  position:relative;
+  float:right;
+  margin-top: 1.5em;
+  margin-right: 1em;
   width: 4.6875em;
-  height: 1.6875;
-  /*left: 16.5em;*/
   background: #FFFFFF;
   border: 0.5px solid #000000;
   box-sizing: border-box;
